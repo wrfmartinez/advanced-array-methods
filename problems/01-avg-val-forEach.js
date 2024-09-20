@@ -12,9 +12,12 @@ console.log(avgVal([3, 7, 2, 1, 2])); // 3
 console.log(avgVal([])); // null
 
 */
+const sumForEach = require("./00-sum-forEach");
 
 let avgVal = function(arr) {
-    // Your code here
+  let total = sumForEach(arr);
+  let average = total / arr.length;
+  return average || null;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
